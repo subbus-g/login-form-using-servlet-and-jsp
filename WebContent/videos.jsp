@@ -8,6 +8,8 @@
 </head>
 <body>
 	<%
+		
+		response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
 		//if user is not logged in then redirect to login page
 		if(session.getAttribute("username") == null)
 		{
