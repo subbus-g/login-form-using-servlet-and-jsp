@@ -17,5 +17,7 @@
 		}
 	%>
 	Welcome ${username}
+	<br>
+	<a href="videos.jsp">click her for videos</a>
 </body>
 </html>
