@@ -11,14 +11,14 @@
 
 	<%
 			
-			//works for HTTP 1.1
-			response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+		//works for HTTP 1.1
+		response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+		
+		//for older versions of HTTP 1.0
+		response.setHeader("Pragma", "no-cache");
 			
-			//for older versions of HTTP 1.0
-			response.setHeader("Pragma", "no-cache");
-				
-			//for proxies
-			response.setHeader("Expires", "0");
+		//for proxies
+		response.setHeader("Expires", "0");
 	
 	
 		//if user is not logged in then redirect to login page
