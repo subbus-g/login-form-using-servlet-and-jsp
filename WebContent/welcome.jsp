@@ -16,8 +16,16 @@
 			response.sendRedirect("login.jsp");
 		}
 	%>
+	
 	Welcome ${username}
+	
 	<br>
+	
 	<a href="videos.jsp">click her for videos</a>
+	
+	<form action="Logout">
+		<input type="submit" value="logout">
+		
+	</form>
 </body>
 </html>

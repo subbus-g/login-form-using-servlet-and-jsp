@@ -31,7 +31,9 @@ public class Login extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		
-		//if login is successful then welcome page is displayed
+		//user credentials are verified
+		//if credentials are correct,it creates session object
+		//and takes to welcome.jsp
 		if(username.equals("admin") && password.equals("1234"))
 		{
 			//setting userdata into a session object
@@ -39,6 +41,7 @@ public class Login extends HttpServlet {
 			session.setAttribute("username",username);
 			response.sendRedirect("welcome.jsp");
 		}
+		//otherwise it will takes to login.jsp
 		else
 		{
 			response.sendRedirect("login.jsp");

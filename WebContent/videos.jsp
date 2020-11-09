@@ -7,13 +7,16 @@
 <title>videos</title>
 </head>
 <body>
-<%
+	<%
 		//if user is not logged in then redirect to login page
 		if(session.getAttribute("username") == null)
 		{
 			response.sendRedirect("login.jsp");
 		}
 	%>
-<h1>This is videos page</h1>
+	<h1>This is videos page</h1>
+	
+	
+
 </body>
 </html>

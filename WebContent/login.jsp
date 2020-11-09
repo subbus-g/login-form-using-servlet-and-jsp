@@ -7,6 +7,7 @@
 <title>login</title>
 </head>
 <body>
+	<!--login.java is invoked when login button is pressed--> 
 	<form action = "Login">
 		Enter username: <input type="text" name="username"><br>
 		Enter password: <input type="password" name="password"><br>
