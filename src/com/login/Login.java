@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class Login
@@ -33,6 +34,9 @@ public class Login extends HttpServlet {
 		//if login is successful then welcome page is displayed
 		if(username.equals("admin") && password.equals("1234"))
 		{
+			//setting userdata into a session object
+			HttpSession session = request.getSession();
+			session.setAttribute("username",username);
 			response.sendRedirect("welcome.jsp");
 		}
 		else

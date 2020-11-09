@@ -8,6 +8,14 @@
 
 </head>
 <body>
-<h1>This is Welcome page</h1>
+
+	<%
+		//if user is not logged in then redirect to login page
+		if(session.getAttribute("username") == null)
+		{
+			response.sendRedirect("login.jsp");
+		}
+	%>
+	Welcome ${username}
 </body>
 </html>
