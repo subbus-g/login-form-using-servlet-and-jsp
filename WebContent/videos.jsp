@@ -5,9 +5,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>videos</title>
-<h1>This is videos page</h1>
 </head>
 <body>
-
+<h1>This is videos page</h1>
 </body>
 </html>

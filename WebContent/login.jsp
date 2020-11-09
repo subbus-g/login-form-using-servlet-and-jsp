@@ -5,9 +5,12 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>login</title>
-<h1>This is login page</h1>
 </head>
 <body>
-
+	<form action = "Login">
+		Enter username: <input type="text" name="username"><br>
+		Enter password: <input type="password" name="password"><br>
+		<input type="submit" value="login">
+	</form>
 </body>
 </html>
