@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Hello</title>
+<title>videos</title>
+<h1>This is videos page</h1>
 </head>
 <body>
-<h1>Welcome to login-form-using-servlet-and-jsp</h1>
+
 </body>
 </html>
